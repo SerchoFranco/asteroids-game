@@ -22,4 +22,13 @@ class Player(CircleShape):
 
   def rotate(self, dt:float) -> None:
     self.rotation = PLAYER_TURN_SPEED * dt
-    
+      
+  def update(self, dt: float) -> None:
+    keys = pygame.key.get_pressed()
+
+    if keys[pygame.K_a]:
+      dt_reversed = -dt 
+      self.rotate(dt_reversed)
+
+    if keys[pygame.K_d]:
+      self.rotate(dt)
