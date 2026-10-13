@@ -4,10 +4,10 @@ from circleshape import CircleShape
 from constants import (
     LINE_WIDTH,
     PLAYER_RADIUS,
+    PLAYER_SHOOT_COOLDOWN_SECONDS,
     PLAYER_SHOOT_SPEED,
     PLAYER_SPEED,
     PLAYER_TURN_SPEED,
-    PLAYER_SHOOT_COOLDOWN_SECONDS,
 )
 from shot import Shot
 
